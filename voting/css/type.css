@@ -3,3 +3,12 @@
     margin: 0;
     padding: 0;
 }
+@media (max-width:600px ) {
+    #left{
+        display: none;
+    }
+    #right{
+        position: absolute;
+
+    }
+}
