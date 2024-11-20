@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital-India | Register</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+    </head>
+    <body style="background-color: black;">
+        <canvas id="snowCanvas"></canvas>
+
+        <div class="shadow rounded" id="register">
+            <div class="row mx-auto">
+                <div class="col-sm-6  my-5 mx-auto">
+                    <form action class="form-control my-4 p-5">
+                        <p class="fs-3 text-center"
+                            style="color: #5D61BF;">Register</p>
+                        <input type="email" name id placeholder="Full Name"
+                            class="form-control  border-0 shadow p-2">
+                        <input type="email" name id placeholder="Email"
+                            class="form-control  border-0 shadow mt-3 p-2">
+                        <input type="password" name id placeholder="Password"
+                            class="form-control  border-0 shadow mt-3 p-2">
+                        <input type="password" name id
+                            placeholder="Confirm Password"
+                            class="form-control  border-0 shadow mt-3 p-2">
+                        <a href class="btn mt-3 form-control text-light"
+                            style="background-color: #5D61BF;">Register</a>
+                        <p class="text-center mt-2">
+                            Already have account?<a href="login.html"
+                                class="text-decoration-none text-center"
+                                style="color: #5D61BF;"> Sign In</a>
+                        </p>
+                    </form>
+
+                </div>
+                <div class="col-sm-6 my-5 mx-auto text-center p-5 ">
+                    <img src="images/logo-white.png" width="200" alt
+                        class="mt-5">
+                    <p class="text-light ">
+                        Make a CV to define yourself The right away. Meet
+                        thousands of job announcements and employers by the help
+                        of your profile with a private extension, which you can
+                        share at all social media environments.
+                    </p>
+                    <a href="login.html" class="btn text-light "
+                        style="background-color: #5D61BF;">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.js"></script>
+        <script>
+        const canvas = document.getElementById('snowCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const snowflakes = [];
+        const colors = ['#fff', '#ccf', '#aaf'];
+
+        function createSnowflake() {
+            const size = Math.random() * 5 + 2;
+            return {
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: size,
+                speed: Math.random() * 1 + 0.5,
+                drift: Math.random() * 0.5 - 0.25,
+                color: colors[Math.floor(Math.random() * colors.length)],
+            };
+        }
+
+        for (let i = 0; i < 100; i++) {
+            snowflakes.push(createSnowflake());
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            snowflakes.forEach((flake) => {
+                ctx.beginPath();
+                ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+                ctx.fillStyle = flake.color;
+                ctx.fill();
+            });
+        }
+
+        function update() {
+            snowflakes.forEach((flake) => {
+                flake.y += flake.speed;
+                flake.x += flake.drift;
+
+                if (flake.y > canvas.height) {
+                    flake.y = 0;
+                    flake.x = Math.random() * canvas.width;
+                }
+
+                if (flake.x > canvas.width) {
+                    flake.x = 0;
+                } else if (flake.x < 0) {
+                    flake.x = canvas.width;
+                }
+            });
+        }
+
+        canvas.addEventListener('mousemove', (e) => {
+            snowflakes.forEach((flake) => {
+                const dx = e.clientX - flake.x;
+                const dy = e.clientY - flake.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < 100) {
+                    flake.x -= dx / 20;
+                    flake.y -= dy / 20;
+                }
+            });
+        });
+
+        function animate() {
+            draw();
+            update();
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+    </body>
+</html>

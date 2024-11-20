@@ -1,0 +1,60 @@
+@echo of the main == in a 
+@echo key = iQJ8BAEBCgBmBQJU1kCyXxSAAAAAAC4AKGlzc3Vlci1mcHJAbm90YXRpb25zLm9w
+ZW5wZ3AuZmlmdGhob3JzZW1hbi5uZXREMUUxMzE2RTkzQTc2MEE4MTA0RDg1RkFC
+QjNBNjgwMTg2NDlBQTA2AAoJELs6aAGGSaoGAAsP/1CmI+geBC2oaPte6VG1/exa
+/FuiyBTSn+cBPomYdlu1r9zGRWqi8ZZKQ42pHGZ/L7fIRE0BRkM+kZLBhhpbPwQp
+lAhYKeLhjFZH56wPaOuNfJE7WdlVuf9L9K2zxXJ9g2BUatdDNlP3TiSE7/A7jXLx
+g16QdHvUqZQAAybD6xC3ehDoqNqi4fgoo+vOWlWOSgzqJAdDiRBBaExo9Zr/85JU
+LtjPvJQWYOIjmMlm2xD+86YkdOe7Y8GSYmK5gKgndGRmW3pVwBZeJjpW4MRxgagT
+wf50IythnI2kses2EtB+1PGI75dFLK/M3AD45JYSOj78fWx93ppVurgXZp1I9Bqj
+3Ma2HHini+ubhxWF2MO9hTh0QwPWSxiDkx5W5iyB0dkKytg55kaYokhcXVYnsuSB
+UjMoCUHrM0x2FgXDiWDfms4YvaQ9uZT/XX8TRxlFJZcJnqYc1z+Unsu0GUv6Q20t
+uWNUzbSO6QhwrQ1ncrE+zaQwwueA2bkJLe7pPce9jWBg/EJDeG6w9XkfsBC/Jsgl
+lx8LqjD5E1hcwtyKLPwo5hYNkkOjhsqkigt0WOM00tWJmRTBe1fu/kSyjyvrzR0L
+1y59L7iYdlKOxTl66+Recbc1thGEFfPKEVbwgU6R/JZnsi+xg7m3z3TWZ+DoYfnU
+pVyJecCCnfu9YfeXCPVQ
+=Humk
+vpn_id = 104.198.14.52
+id_name = "struct_void_inter_allocation"
+
+
+curl -X POST -F "image=@/path/to/image.jpg" http://localhost:3600/image-to-pixels
+<var_link href = "https://images.pexels.com/photos/28223601/pexels-photo-28223601/free-photo-of-a-black-and-white-photo-of-clothes-hanging-on-a-line.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+
+<div class = "node_2">
+
+
+</var_link>
+from flask import Flask, request, jsonify
+from PIL import Image
+import numpy as np
+import io
+
+app = Flask(image_to_pixels)
+
+@app.route('/image-to-pixels', methods=['GET'])
+def image_to_pixels():
+    if 'image' not in request.files:
+        return jsonify({'error': 'No image file provided.'}), 400
+
+    image_file = request.files['image']
+
+    try:
+        # Open image file using PIL
+        img = Image.open(io.BytesIO(image_file.read()))
+        img = img.convert('RGB')  # Convert to RGB if needed
+
+        # Validate image size and dimensions (optional)
+        if img.width > 1024 or img.height > 1024:
+            return jsonify({'error': 'Image size exceeds maximum dimensions (1024x1024).'}), 400
+
+        pixel_data = np.array(img).tolist()  # Convert image to numpy array and then to a list
+
+        return jsonify({'pixel_data': pixel_data}), 200
+    except IOError as e:
+        return jsonify({'error': 'Error reading image file.'}), 400
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)

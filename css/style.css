@@ -1,0 +1,71 @@
+#nav:hover{
+    background-color: #5B3BD8;
+}
+#navlink:hover{
+    color: white;
+}
+.dropdown:hover .dropdown-menu{
+    margin-top: 15px;
+    display: block;
+}
+/* .dropdown-menu:hover{
+    color: #5B3BD8;
+} */
+
+.card:hover{
+    box-shadow: 1px 1px 10px #F03737 ;
+}
+.cardd:hover{
+    box-shadow: 1px 1px 10px #5B3BD8 ;
+}
+.cardjob:hover{
+    box-shadow: 1px 1px 10px #5B3BD8 ;
+}
+
+/* login page start */
+
+#login{
+    margin-top: 140px;
+    margin-left: 360px;
+    width: 850px;
+    height: 500px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),  /* Top color with 50% opacity */
+        rgba(0, 0, 0, 0.5)   /* Bottom color with 10% opacity */
+      ), 
+      url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+.text-justify{
+    text-align: justify;
+}
+
+
+
+
+/* login page end */
+
+/* register form start */
+
+#register{
+    margin-top: 100px;
+    margin-left: 420px;
+    width: 750px;
+    height: 600px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),  /* Top color with 50% opacity */
+        rgba(0, 0, 0, 0.5)   /* Bottom color with 10% opacity */
+      ), 
+      url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.matrix a img {
+    padding: 10px;
+    height: 150px;
+    border: none;
+    color: transparent;
+}

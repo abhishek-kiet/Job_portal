@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+nav {
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* background-color: black; */
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+nav li:nth-child {
+    margin-right: auto;
+
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 10px; */
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 22px;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.slidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.logo1 {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    float: left;
+    margin-left: 100px;
+}
+
+.slidebar li {
+    width: 100%;
+
+}
+
+.slidebar a {
+    width: 100%;
+}
+
+
+
+svg {
+    padding-left: 10px;
+}
+
+.poppup {
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.5s ease;
+    -webkit-transition: bottom 0.5s ease;
+    -moz-transition: bottom 0.5s ease;
+    -ms-transition: bottom 0.5s ease;
+    -o-transition: bottom 0.5s ease;
+}
+
+.poppup:hover {
+    position: relative;
+    bottom: 10px;
+
+}
+
+footer {
+    font-family: sans-serif;
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px 20px;
+    /* Added margin to create space between sections */
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-note,
+.footer-update {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.footer-update {
+    text-align: right;
+}
+
+
+.sec2 {
+    line-height: 1;
+    font-family: 'open_sansregular';
+    font-size: 100%;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0) url(/sites/all/themes/adaptivetheme/npi_adaptive/images/bg-noise.png) repeat scroll 0 0;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.footer_col3 {
+    position: relative;
+    top: 100px;
+}
+
+.footer_main li {
+    font-size: 13px;
+    color: rgb(185, 185, 185);
+}
+
+.footer_main li:hover {
+    color: white;
+}
+
+.footer_top_nav {
+    background-color: #1c1c1c;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 10px;
+}
+
+.footer_top_nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.top_foot {
+    padding: 0;
+    margin: 10px;
+}
+
+.top_foot a {
+    color: orange;
+    text-decoration: none;
+}
+
+.logo_stqc {
+    float: right;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: flex;
+
+}
+
+.fade_none {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* section 1 css  */
+
+.section_1_main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /*border: black solid 2px;
+    */
+
+}
+
+.sub_section_part_1 {
+    background-image: linear-gradient(to bottom right, rgba(97, 192, 227, 0.543), rgba(182, 90, 90, 0)), url('../images/voting_sec_1.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    align-items: center;
+    /*border: black solid 3px;
+    */
+    background-blend-mode: multiply;
+    padding: 30px;
+    margin: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /*font-style: italic;
+    */
+    border-radius: 10px;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    mix-blend-mode: multiply;
+    animation: backgroundAnimation 3s ease-in-out forwards;
+
+}
+
+.sub_section_part_2 {
+    background-image: linear-gradient(to bottom right, rgba(80, 192, 233, 0.316), rgba(182, 90, 90, 0)), url('../images/voting_sec_2.jpg');
+    /* background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.548), rgba(182, 90, 90, 0)), url('../images/voting_sec_1.jpg'); */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    align-items: center;
+    /*border: black solid 3px;
+    */
+    background-blend-mode: multiply;
+    padding: 30px;
+
+    margin: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /*font-style: italic;
+    */
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    mix-blend-mode: multiply;
+    animation: backgroundAnimation 3s ease-in-out forwards;
+    border-radius: 10px;
+}
+
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 100% 0;
+        opacity: 0;
+    }
+
+    100% {
+        background-position: 80% 0;
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    position: relative;
+    top: 30px;
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards;
+    -webkit-animation: fade-in 1s ease-in forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        top: 30px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+.sec_span_1 {
+    color: black;
+    text-decoration: none;
+}
+
+/* section 2 start */
+
+.section-2 {
+    /* styles.css */
+    background-image: linear-gradient(to bottom right, rgba(249, 249, 249, 0.474), rgba(18, 15, 15, 0)), url('../images/secimg2.jpeg');
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 10px;
+    background-size: cover;
+    /* Cover the entire div */
+    background-position: center;
+    background-attachment: fixed;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    display: flex;
+    /* Optional: to center the content */
+    justify-content: center;
+    /* Optional: center content horizontally */
+    align-items: center;
+    /* Optional: center content vertically */
+    color: white;
+    /* Optional: text color to make it readable */
+    text-align: center;
+    /* Optional: center text alignment */
+
+}
+
+.sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Space between cards */
+    padding: 20px;
+    height: 100vh;
+    /* Optional: to fill the viewport height */
+}
+
+.card {
+    text-shadow: 1px 1px 2px rgb(197, 235, 234), 0 0 1em rgb(220, 247, 241), 0 0 0.2em rgb(218, 239, 240);
+    background-color: #c1e3ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 500px;
+    /*Setthewidthofeachcard*/
+    height: 400px;
+    /*Settheheightofeachcard*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    /*margin: 10px;
+    */
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    animation: fade-in 5s ease-in forwards;
+    -webkit-animation: fade-in 5s ease-in forwards;
+    background-position: 40px 20px;
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+
+
+}
+
+.card:hover {}
+
+.sec3 {
+    background-color: rgba(255, 228, 196, 0.254);
+    /* background-color: red; */
+
+}
+
+.section_3_main_div {
+    width: 100%;
+    height: auto;
+}
+
+.section_3_main_div div {
+    height: 500px;
+}
+
+.p_block {
+    /* height:0px; */
+    width: 700px;
+    float: right;
+    position: relative;
+    font-size: 22px;
+    top: 100px;
+    right: 300px;
+    text-align: right, left;
+
+
+}
+
+hr {
+    position: relative;
+    left: 300px;
+    box-shadow: rgba(16, 213, 137, 0.866) 0px 22px 70px 4px;
+    border: none;
+    /* Remove the default border */
+    height: 3px;
+    /* Increase the height */
+    width: 35%;
+    /* Adjust the width */
+    background-color: rgb(0, 0, 0);
+    /* Set a background color */
+    margin: 20px auto;
+    /* Center the hr tag with auto margins */
+}
+
+.color3 {
+    color: green;
+    text-shadow: 2px 2px 5px rgba(16, 136, 16, 0.966);
+}
+
+.color2 {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(58, 59, 58, 0.816);
+}
+
+.color1 {
+    color: orange;
+    text-shadow: 2px 2px 5px rgb(244, 178, 12);
+}
+
+.section_3_main_div div img {
+    float: left;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    position: relative;
+    top: 100px;
+    left: 300px;
+
+}
+
+party-heading {
+    font-size: 36px;
+    /* Adjust font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    color: #333;
+    /* Dark gray color */
+    margin: 20px 0;
+    /* Spacing between headings */
+}
+
+/* this is section is for the responsiveness you can add your own design */
+
+
+@media (max-width : 800px) {
+    .hideonmobile {
+        display: none;
+    }
+
+}
