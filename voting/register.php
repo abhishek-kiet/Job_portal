@@ -6,6 +6,7 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/type.css">
     <style>
         *{
             font-family: Century Gothic, and Cinzel;
@@ -14,6 +15,9 @@
         body{
             display: grid;
             padding: 1.25rem;
+        }
+        #left{
+            margin: 0;
         }
         #box{
             height: 92vh;
@@ -98,9 +102,10 @@
         }
         .text{
             position:relative;
-            bottom: 727px;
+            bottom: 850px;
 
         }
+        
     </style>
 </head>
 <body>
@@ -109,9 +114,9 @@
         <div id="left">
             <img src="images/gg.jpeg" alt="">
             <div class="text">
-                <h1 align="center">ONLINE VOTING SYSTEM</h1>
+                <h1 class="heading-r" align="center">ONLINE VOTING SYSTEM</h1>
                 <hr style="border:2px dashed black;">
-                <p align="center" style="margin-top: 100px; font-size:25px;">Register As A Voter <span style="font-weight: bold;">/</span> Group</p>
+                <p align="center" style=" font-size:25px;">Register As A Voter <span style="font-weight: bold;">/</span> Group</p>
                 <p align="center" style="font-size:25px;">And</p>
                 <img src="images/vote.jpg" alt="" style="border-radius:50%; width:250px; margin-left:95px">
             </div>

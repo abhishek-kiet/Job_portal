@@ -93,7 +93,10 @@ nav a:hover {
     float: left;
     margin-left: 100px;
 }
-
+.stopanime{
+    animation: none;
+    -webkit-animation: none;
+}
 .slidebar li {
     width: 100%;
 
