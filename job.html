@@ -1,403 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital-India || Job</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <!-- container start -->
-    <div class="container-fluid">
-        <!-- navbar start -->
-        <div class="row sticky-top bg-light">
-            <div class="col-sm-12 p-0">
-                <nav class="navbar navbar-expand-lg shadow p-2">
-                    <div class="container-fluid">
-                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                        <img src="images/asset 0.png" alt="" height="50" class="ms-5 my-3">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0  mx-auto">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                          </li>
-                          <li class="nav-item ms-3">
-                            <a class="nav-link active" aria-current="page" href="job.html">Jobs</a>
-                          </li>
-                          <li class="nav-item ms-3">
-                            <a class="nav-link active" aria-current="page" href="career.html">Career Advice</a>
-                          </li>
-                          <li class="nav-item ms-3">
-                            <a class="nav-link active" aria-current="page" href="#">Sectors</a>
-                          </li>
-                          
-                        </ul>
-                        <!-- <form class="d-flex" role="search">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital-India || Job</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        .col-sm-6{
+            height: 200px;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- container start -->
+        <div class="container-fluid">
+            <!-- navbar start -->
+            <div class="row sticky-top bg-light">
+                <div class="col-sm-12 p-0">
+                    <nav class="navbar navbar-expand-lg shadow p-2">
+                        <div class="container-fluid">
+                            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                            <img src="images/asset 0.png" alt height="50"
+                                class="ms-5 my-3">
+                            <button class="navbar-toggler" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse"
+                                id="navbarSupportedContent">
+                                <ul
+                                    class="navbar-nav me-auto mb-2 mb-lg-0  mx-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active"
+                                            aria-current="page"
+                                            href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item ms-3">
+                                        <a class="nav-link active"
+                                            aria-current="page"
+                                            href="job.html">Jobs</a>
+                                    </li>
+                                    <li class="nav-item ms-3">
+                                        <a class="nav-link active"
+                                            aria-current="page"
+                                            href="career.html">Career Advice</a>
+                                    </li>
+                                    <li class="nav-item ms-3">
+                                        <a class="nav-link active"
+                                            aria-current="page"
+                                            href="#">Sectors</a>
+                                    </li>
+
+                                </ul>
+                                <!-- <form class="d-flex" role="search">
                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         </form> -->
-                      </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- navbar start -->
-        
-        <!-- search start -->
-        <div class="row" style="background-color: #F2F6FF;">
-            <div class="col-sm-12">
-                <p class="my-5 text-center fs-1 fw-semibold">FIND THE JOB THAT FITS YOUR LIFE</p>
-                <p class="my-5 text-center fs-3">We offer thousands of jobs vacancies right now</p>
-                <div class="row">
-                    <div class="col-sm-8 mx-auto">
-                        <div class="row">
-                            <div class="col-sm-6 mx-auto">
-                                <input type="text" name="" id="" class="form-control border-0 rounded-0 p-3 shadow" placeholder="Job Title, Keywords, or Company">
-                                <p class="mt-3 mb-5">Browse job offers by Category or Location</p>
-                            </div>
-                            <div class="col-sm-4 mx-auto">
-                                <input type="text" name="" id="" class="form-control border-0 rounded-0 p-3 shadow" placeholder="Location">
-                            </div>
-                            <div class="col-sm-2">
-                                <a href="" class="btn text-light p-3 w-100" style="background-color: #5D61BF;">Search</a>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                 </div>
             </div>
-        </div>
-        <!-- search end -->
+            <!-- navbar start -->
 
-        <!-- job listing start -->
-        <div class="row my-5">
-            <div class="col-sm-10 mx-auto">
-                <h1 class="text-center">Job Listing</h1>
-                <div class="row mt-5">
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
+            <!-- search start -->
+            <div class="row" style="background-color: #F2F6FF;">
+                <div class="col-sm-12">
+                    <p class="my-5 text-center fs-1 fw-semibold">FIND THE JOB
+                        THAT FITS YOUR LIFE</p>
+                    <p class="my-5 text-center fs-3">We offer thousands of jobs
+                        vacancies right now</p>
+                    <div class="row">
+                        <div class="col-sm-8 mx-auto">
+                            <div class="row">
+                                <div class="col-sm-6 mx-auto">
+                                    <input type="text" name id
+                                        class="form-control border-0 rounded-0 p-3 shadow"
+                                        placeholder="Job Title, Keywords, or Company">
+                                    <p class="mt-3 mb-5">Browse job offers by
+                                        Category or Location</p>
                                 </div>
-                                <div class="col-sm-6">
-                                    <a href="" class="text-decoration-none" >General</a>
-                                    <p>India</p>
+                                <div class="col-sm-4 mx-auto">
+                                    <input type="text" name id
+                                        class="form-control border-0 rounded-0 p-3 shadow"
+                                        placeholder="Location">
                                 </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <p>
-                                        Corenza
-                                        <br>
-                                        <span>Opportunity For Fresher</span>
-                                        <a href="" class="text-decoration-none" >General</a>
-                                        <br>
-                                        <span>India</span>
-                                    </p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
+                                <div class="col-sm-2">
+                                    <a
+                                        href="cv/MyCVCreator – Free CV Creator, Resume Maker & Online CV Generator.html"
+                                        class="btn text-light p-3 w-100"
+                                        style="background-color: #5D61BF;">Want
+                                        to Create Your Own Resume?</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="" class="text-decoration-none" >General</a>
-                                    <p>India</p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="" class="text-decoration-none" >General</a>
-                                    <p>India</p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <p>
-                                        Corenza
-                                        <br>
-                                        <span>Opportunity For Fresher</span>
-                                        <a href="" class="text-decoration-none" >General</a>
-                                        <br>
-                                        <span>India</span>
-                                    </p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="" class="text-decoration-none" >General</a>
-                                    <p>India</p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="" class="text-decoration-none" >General</a>
-                                    <p>India</p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <p>
-                                        Corenza
-                                        <br>
-                                        <span>Opportunity For Fresher</span>
-                                        <a href="" class="text-decoration-none" >General</a>
-                                        <br>
-                                        <span>India</span>
-                                    </p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="" class="text-decoration-none" >General</a>
-                                    <p>India</p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="" class="text-decoration-none" >General</a>
-                                    <p>India</p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <p>
-                                        Corenza
-                                        <br>
-                                        <span>Opportunity For Fresher</span>
-                                        <a href="" class="text-decoration-none" >General</a>
-                                        <br>
-                                        <span>India</span>
-                                    </p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-sm-4">
-                        <div class="card cardjob">
-                            <div class="row p-3">
-                                <div class="col-sm-3">
-                                    <img src="images/jobicon.png" class="img-fluid border" alt="">
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="" class="text-decoration-none" >General</a>
-                                    <p>India</p>
-                                </div>
-                                <div class="col-sm-3">
-                                    <a href="" class="btn btn-primary">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <!-- job listing end -->
-        
-        <!-- footer start -->
-        <div class="row" style="background-color: #212529;">
-            <div class="col-sm-10 mx-auto my-5">
-                <div class="row">
-                    <div class="col-sm-4 mx-auto">
-                        <h2 class="text-light text-center">Contact <span style="color: #F03737;">Info</span></h2>
-                        <hr class="text-light mb-5">
-                        <div class="row text-light">
-                            <div class="col-sm-2 mx-auto">
-                                <img src="images/footer1.png" alt="">
-                            </div>
-                            <div class="col-sm-9 mx-auto ">
-                                <p class="">
-                                    DO YOU HAVE A QUESTION ?
-                                    <br>
-                                    <span class="fs-4">info@myjobgator.com</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row text-light mt-4">
-                            <div class="col-sm-2 mx-auto">
-                                <img src="images/footer2.png" alt="">
-                            </div>
-                            <div class="col-sm-9 mx-auto ">
-                                <p class="fs-6">Social Networks</p>
-                                <p class="fs-5">
-                                    <i class="fa-brands fa-twitter"></i>
-                                    <i class="fa-brands fa-instagram"></i>
-                                    <i class="fa-brands fa-facebook"></i>
-                                    <i class="fa-brands fa-youtube"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mx-auto">
-                        <h2 class="text-light text-center">Quick <span style="color: #F03737;">Links</span></h2>
-                        <hr class="text-light mb-5">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <a href="" class="text-decoration-none text-light">Home</a>
-                                <br><br>
-                                <a href="" class="text-decoration-none text-light">Jobs</a>
-                                <br><br>
-                                <a href="" class="text-decoration-none text-light">Career</a>
-                            </div>
-                            <div class="col-sm-6">
-                                <a href="" class="text-decoration-none text-light">Order a Resume</a>
-                                <br><br>
-                                <a href="" class="text-decoration-none text-light">sectors</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mx-auto">
-                        <h2 class="text-light text-center">Our <span style="color: #F03737;">Company</span></h2>
-                        <hr class="text-light mb-5">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <a href="" class="text-decoration-none text-light">About Us</a>
-                                <br><br>
-                                <a href="" class="text-decoration-none text-light">Privacy Policy</a>
-                                <br><br>
-                            </div>
-                            <div class="col-sm-6">
-                                <a href="" class="text-decoration-none text-light">Contact Us</a>
-                                <br><br>
-                                <a href="" class="text-decoration-none text-light">Terms & <br>Contidion</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="text-light mt-5">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p class="text-light">
-                            <span class="text-left">&copy; Copyright 2024 My Job Gator. All rights reserved</span>
-                        </p>
-                    </div>
-                    <div class="col-sm-6">
-                        <span class="text-light"><a href="" class="text-decoration-none text-light">Terms & Conditions </a> | <a href="" class="text-decoration-none text-light">Privacy Policy</a></span>
                     </div>
                 </div>
             </div>
+            <!-- search end -->
+
+            <!-- job listing start -->
+            <div class="row my-5">
+                <div class="col-sm-10 mx-auto">
+                    <h1 class="text-center">Job Listing</h1>
+                    <div class="row mt-5">
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href
+                                            class="text-decoration-none">TechSpire</a>
+                                        <p>Software Engineer - Backend
+                                            Developement </p>
+                                        <p>Expertise in Python, Django, and REST
+                                            APIs</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>
+                                            Corenza
+                                            <br>
+                                            <span>Opportunity For Fresher</span>
+                                            <a href
+                                                class="text-decoration-none">General</a>
+                                            <br>
+                                            <span>India</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href
+                                            class="text-decoration-none">Innowave</a>
+                                        <p>Data Scientist</p>
+                                        <p>Experties in python , django and Rest
+                                            APIs</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href
+                                            class="text-decoration-none">Cyber
+                                            core</a>
+                                        <p>Front-End Developer</p>
+                                        <p>Specializing in NLP and Predictive
+                                            Modeling</p>
+                                        <p>Location : India</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>
+                                            Ai Horizon
+                                            <br>
+                                            <span>Opportunity For Fresher</span>
+                                            <a href
+                                                class="text-decoration-none">General</a>
+                                            <br>
+                                            <span>India</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href
+                                            class="text-decoration-none">General</a>
+                                        <p>India</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href
+                                            class="text-decoration-none">General</a>
+                                        <p>India</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>
+                                            Corenza
+                                            <br>
+                                            <span>Opportunity For Fresher</span>
+                                            <a href
+                                                class="text-decoration-none">General</a>
+                                            <br>
+                                            <span>India</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href
+                                            class="text-decoration-none">General</a>
+                                        <p>India</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href
+                                            class="text-decoration-none">General</a>
+                                        <p>India</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>
+                                            Corenza
+                                            <br>
+                                            <span>Opportunity For Fresher</span>
+                                            <a href
+                                                class="text-decoration-none">General</a>
+                                            <br>
+                                            <span>India</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card cardjob">
+                                <div class="row p-3">
+                                    <div class="col-sm-3">
+                                        <img src="images/asset 13.png"
+                                            class="img-fluid border" alt>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href
+                                            class="text-decoration-none">General</a>
+                                        <p>India</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href
+                                            class="btn btn-primary">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- job listing end -->
+
+            <!-- footer start -->
+            <div class="row" style="background-color: #212529;">
+                <div class="col-sm-10 mx-auto my-5">
+                    <div class="row">
+                        <div class="col-sm-4 mx-auto">
+                            <h2 class="text-light text-center">Contact <span
+                                    style="color: #F03737;">Info</span></h2>
+                            <hr class="text-light mb-5">
+                            <div class="row text-light">
+                                <div class="col-sm-2 mx-auto">
+                                    <img src="images/footer1.png" alt>
+                                </div>
+                                <div class="col-sm-9 mx-auto ">
+                                    <p class>
+                                        DO YOU HAVE A QUESTION ?
+                                        <br>
+                                        <span
+                                            class="fs-4">technify_kiet@kiet.edu</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row text-light mt-4">
+                                <div class="col-sm-2 mx-auto">
+                                    <img src="images/footer2.png" alt>
+                                </div>
+                                <div class="col-sm-9 mx-auto ">
+                                    <p class="fs-6">Social Networks</p>
+                                    <p class="fs-5">
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mx-auto">
+                            <h2 class="text-light text-center">Quick <span
+                                    style="color: #F03737;">Links</span></h2>
+                            <hr class="text-light mb-5">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href
+                                        class="text-decoration-none text-light">Home</a>
+                                    <br><br>
+                                    <a href
+                                        class="text-decoration-none text-light">Jobs</a>
+                                    <br><br>
+                                    <a href
+                                        class="text-decoration-none text-light">Career</a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href
+                                        class="text-decoration-none text-light">Order
+                                        a Resume</a>
+                                    <br><br>
+                                    <a href
+                                        class="text-decoration-none text-light">sectors</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mx-auto">
+                            <h2 class="text-light text-center">Our <span
+                                    style="color: #F03737;">Company</span></h2>
+                            <hr class="text-light mb-5">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href
+                                        class="text-decoration-none text-light">About
+                                        Us</a>
+                                    <br><br>
+                                    <a href
+                                        class="text-decoration-none text-light">Privacy
+                                        Policy</a>
+                                    <br><br>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href
+                                        class="text-decoration-none text-light">Contact
+                                        Us</a>
+                                    <br><br>
+                                    <a href
+                                        class="text-decoration-none text-light">Terms
+                                        & <br>Contidion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-light mt-5">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="text-light">
+                                <span class="text-left">&copy; Copyright 2024 My
+                                    Job. All rights reserved</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <span class="text-light"><a href
+                                    class="text-decoration-none text-light">Terms
+                                    & Conditions </a> | <a href
+                                    class="text-decoration-none text-light">Privacy
+                                    Policy</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer end -->
         </div>
-        <!-- footer end -->
-    </div>
-    <!-- container end -->
+        <!-- container end -->
 
-
-    <script src="js/bootstrap.bundle.js"></script>
-</body>
+        <script src="js/bootstrap.bundle.js"></script>
+    </body>
 </html>
