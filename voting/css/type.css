@@ -1,5 +1,6 @@
 .heading-r{
-    
+    position:relative;
+    top: -45px;
     margin: 0;
     padding: 0;
 }

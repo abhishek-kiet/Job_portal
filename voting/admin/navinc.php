@@ -36,7 +36,7 @@
       <i class="bx bx-menu" id="sidebar-open"></i>
       
    
-      <p style="margin-left: 920px;"><?php echo "<b>Welcome Admin:</b> ", $_SESSION['admin']; ?></p>
+      <p style="margin-left: 920px;"><?php echo "<b>Welcome Admin:</b> ", "Abhishek Thakur" ?></p>
       <!-- <span class="nav_image"> -->
         <!-- <img src="../images/ram.jpg" alt="logo_img" /> -->
       <!-- </span> -->

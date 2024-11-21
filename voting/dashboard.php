@@ -142,11 +142,11 @@ while ($row2 = mysqli_fetch_array($res2)) {
 
 
         $additional_parties = [
-            ['name' => 'Samajwadi Party', 'pic' => 'baspa.png', 'vid' => '1001'],
-            ['name' => 'Bhartiya Janta Party', 'pic' => 'bjp.png', 'vid' => '1002'],
-            ['name' => 'Aam Admi Party', 'pic' => 'aap.png', 'vid' => '1003'],
-            ['name' => 'C.O.I.', 'pic' => 'coi.png', 'vid' => '1004'],
-            ['name' => 'N.P.P.', 'pic' => 'npp.jpg', 'vid' => '1005']
+            ['name' => 'Samajwadi Party', 'pic' => 'baspa.png', 'vid' => '4'],
+            ['name' => 'Bhartiya Janta Party', 'pic' => 'bjp.png', 'vid' => '5'],
+            ['name' => 'Aam Admi Party', 'pic' => 'aap.png', 'vid' => '6'],
+            ['name' => 'C.O.I.', 'pic' => 'coi.png', 'vid' => '7'],
+            
         ];
 
         foreach ($additional_parties as $party) {

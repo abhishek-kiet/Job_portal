@@ -115,7 +115,7 @@
             <img src="images/gg.jpeg" alt="">
             <div class="text">
                 <h1 class="heading-r" align="center">ONLINE VOTING SYSTEM</h1>
-                <hr style="border:2px dashed black;">
+                <hr style="position:relative; top:-32px;border:2px dashed black;">
                 <p align="center" style=" font-size:25px;">Register As A Voter <span style="font-weight: bold;">/</span> Group</p>
                 <p align="center" style="font-size:25px;">And</p>
                 <img src="images/vote.jpg" alt="" style="border-radius:50%; width:250px; margin-left:95px">
@@ -130,11 +130,33 @@
         <br/>
         <br/>
         <input type="password" name="pass" placeholder="Create your Password" style="width: 26.875rem; margin-left:20.625rem; margin-top:1.25rem"/>
+        <input type="password" name="pass" placeholder="Confirm Password" style="width: 26.875rem; margin-left:20.625rem; margin-top:1.25rem"/>
         <br/>
         <br/>
         <textarea name="address" placeholder="Enter Your Address" style="width: 26.875rem; margin-left:20.625rem; height: 3.125rem; margin-top:1.25rem;"></textarea>
         <br/>
-        <span style="margin-left:25rem; font-weight:bold;">Upload Pic:</span> <input type="file" name="photo" style="width:18.75rem; margin-left:0.625rem; border-radius:0px;"/>
+        <div style="margin-top:15px; margin-left: 25rem; font-weight: bold; display: flex; align-items: center;">
+        <span style="margin-right: 0.625rem;">Upload Pic:</span>
+        <label 
+            style="
+                display: inline-block; 
+                padding: 10px 20px; 
+                background-color: #007bff; 
+                color: white; 
+                font-weight: bold; 
+                border: none; 
+                border-radius: 5px; 
+                cursor: pointer; 
+                text-align: center;
+            ">
+            Upload
+            <input 
+                type="file" 
+                name="photo" 
+                style="display: none;" 
+            />
+        </label>
+    </div>
         <br/>
         <br/>
         <select name="role" style="margin-left: 28.125rem; width:12.5rem; margin-top:0.625rem;">
@@ -154,7 +176,6 @@
         </div>
     </div>
     
-
    
 </body>
 </html>
