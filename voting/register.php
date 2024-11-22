@@ -126,7 +126,7 @@
             <hr style="border:2px dashed black;">
          <form action="code.php" method="post" enctype="multipart/form-data">
         <input type="text" name="name" placeholder="Enter your Name" style="margin-left: 17.188rem;"/>
-        <input type="text" name="mobile" placeholder="Enter Your Mobile Number" style="margin-left: 1.25rem;"/>
+        <input type="text" maxlength="10"  minlength="10" name="mobile" placeholder="Enter Your Mobile Number" style="margin-left: 1.25rem;"/>
         <br/>
         <br/>
         <input type="password" name="pass" placeholder="Create your Password" style="width: 26.875rem; margin-left:20.625rem; margin-top:1.25rem"/>
