@@ -61,3 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+consol.log(5+6/12)
+a 
