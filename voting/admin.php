@@ -111,7 +111,10 @@
                                         <p class="small mb-0">Please enter your
                                             credentials to access the
                                             administrative functions of the
-                                            system. 
+                                            system. This secure area is designed
+                                            for authorized personnel only,
+                                            ensuring the highest level of
+                                            privacy and protection for our data.
 
                                             Features:
 
