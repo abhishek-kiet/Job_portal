@@ -219,7 +219,7 @@
     <h2 align="center" style="position:absolute; font-size:100px; top:50px; right:240px;"><i class="bi bi-patch-question"></i></h2>
             <h1>New Here?</h1>
             <pre style="font-family: Georgia, Arial and Helvetica;">Sign Up And Discover A Great
-Amount Of New Opportunties!</pre>
+Amount Of New Opportunties! Good Luck !</pre>
                     <input type="button" value="SignUp" onclick="window.location.href='register.php'" id="sign"/>
     </div>
     <div id="footer">
